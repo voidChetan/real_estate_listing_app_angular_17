@@ -3,8 +3,14 @@ import { HomeComponent } from './pages/home/home.component';
 import { LoginComponent } from './pages/login/login.component';
 import { RegistrationComponent } from './pages/registration/registration.component';
 import { PropertyListComponent } from './pages/property-list/property-list.component';
+import { EnquiriesComponent } from './pages/enquiries/enquiries.component';
 
 export const routes: Routes = [
+
+    {
+        path:'auth',
+        loadChildren (
+    }
     {
         path:'',
         redirectTo: 'home',
@@ -25,6 +31,10 @@ export const routes: Routes = [
     {
         path:'propertyList',
         component: PropertyListComponent
+    },
+    {
+        path:'enquries',
+        component: EnquiriesComponent
     }
 
 ];

@@ -1,42 +1,44 @@
-<div class="container">
-    <div class="row justify-content-center align-items-center">
-        <div class="col-lg-9 text-center">
-            <h1 class="heading" data-aos="fade-up">
-               Register 
-            </h1>
-            <form action="#" class="narrow-w form-search align-items-stretch mb-3" data-aos="fade-up"
-                data-aos-delay="200">
-                <div class="row">
-                    <div class="col-6">
-                        <input type="text" class="form-control px-4"
-                        placeholder="Full Name" />
+<div class="section">
+    <div class="container">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-lg-9 text-center">
+                <h1 class="heading" data-aos="fade-up">
+                   Register 
+                </h1>
+                <form action="#" class="narrow-w form-search align-items-stretch mb-3" data-aos="fade-up"
+                    data-aos-delay="200">
+                    <div class="row">
+                        <div class="col-6">
+                            <input type="text"  name="fullName" [(ngModel)]="registerObj.fullName" class="form-control px-4"
+                            placeholder="Full Name"  />
+                        </div>
+                        <div class="col-6">
+                            <input type="text"  name="emailId" [(ngModel)]="registerObj.emailId" class="form-control px-4"
+                            placeholder="Email-Id" />
+                        </div>
                     </div>
-                    <div class="col-6">
-                        <input type="text" class="form-control px-4"
-                        placeholder="Email-Id" />
+                    <div class="row pt-3 pb-3">
+                        <div class="col-6">
+                            <input type="text"  name="userName" [(ngModel)]="registerObj.userName" class="form-control px-4"
+                            placeholder="User Name" />
+                        </div>
+                        <div class="col-6">
+                            <input type="text"  name="password" [(ngModel)]="registerObj.password" class="form-control px-4"
+                            placeholder="Password" />
+                        </div>
                     </div>
-                </div>
-                <div class="row pt-3 pb-3">
-                    <div class="col-6">
-                        <input type="text" class="form-control px-4"
-                        placeholder="User Name" />
+                    <div class="row pt-3 pb-3">
+                        <div class="col-6">
+                            <button type="button" (click)="isAgent = true" [class]="isAgent? 'btn btn-success':'btn btn-primary'" class="">Are You  Agent</button>
+                        </div>
+                        <div class="col-6">
+                            <button type="button" (click)="isAgent = false" [class]="!isAgent? 'btn btn-success':'btn btn-primary'">Are you a Customer</button>
+                        </div>
                     </div>
-                    <div class="col-6">
-                        <input type="text" class="form-control px-4"
-                        placeholder="Password" />
-                    </div>
-                </div>
-                <div class="row pt-3 pb-3">
-                    <div class="col-6">
-                        <button type="submit" class="btn btn-white">Are You  Agent</button>
-                    </div>
-                    <div class="col-6">
-                        <button type="submit" class="btn btn-primary">Are you a Customer</button>
-                    </div>
-                </div>
-                
-                <button type="submit" class="btn btn-primary">Register</button>
-            </form>
+                    
+                    <button type="button" (click)="onRegister()" class="btn btn-primary">Register</button>
+                </form>
+            </div>
         </div>
     </div>
 </div>

@@ -1,0 +1,30 @@
+<div class="section" >
+    <div class="row">
+        <div class="col-12">
+            <table class="table table-bordered text-center mt-4 table-striped">
+                <thead>
+                    <th>Sr.No</th>
+                    <th>Title</th>
+                    <th>Description</th>
+                    <th>City</th>
+                    <th>Enquiry Date</th>
+                    <th>City</th>
+                    <th>Action</th>
+                </thead>
+                <tbody>
+                    @for (item of enqurryList; track $index) {
+                        <tr>
+                            <td>{{ $index+1}}</td> 
+                            <td>{{item.complaintId}}</td>
+                            <td>{{item.complaintDetails}}</td>
+                            <td>{{item.complaintNo}}</td>
+                            <td>{{item.enquiryDate}}</td>
+                             
+                        </tr>
+                    }
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

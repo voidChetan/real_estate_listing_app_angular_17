@@ -7,16 +7,26 @@
   <div class="site-mobile-menu-body"></div>
 </div>
 <nav class="site-nav">
-  <div class="container">
+  <div class="container-fluid">
     <div class="menu-bg-wrap">
       <div class="site-navigation">
-        <a routerLink="/home" class="logo m-0 float-start">Property</a>
+        <a routerLink="/home" class="logo m-0 float-start">Property Finder</a>
 
         <ul class="js-clone-nav d-none d-lg-inline-block text-start site-menu float-end">
           <li class="active"><a routerLink="/home">Home</a></li>
-          <li class="active"><a  routerLink="/propertyList">Properties</a></li>
-          <li><a  routerLink="/login">Login</a></li>
-          <li><a  routerLink="/register">Register</a></li>
+          @if(loggedUserData && loggedUserData.role == "Agent") {
+            <li class="active"><a  routerLink="/propertyList">Properties</a></li>
+            <li class="active"><a  routerLink="/enquries">Enquiry</a></li>
+          }
+        
+          @if(loggedUserData) {
+            <li ><a >{{loggedUserData.userName}}</a></li>
+            <li><a  (click)="logOff()">LogOff</a></li>
+          } @else { 
+            <li ><a  routerLink="/login">Login</a></li>
+            <li><a  routerLink="/register">Register</a></li>
+          }
+         
         </ul> 
         <a href="#" class="burger light me-auto float-end mt-1 site-menu-toggle js-menu-toggle d-inline-block d-lg-none"
           data-toggle="collapse" data-target="#main-navbar">
@@ -26,7 +36,7 @@
     </div>
   </div>
 </nav>
-<div class=" " style="padding-top:150px;background-color: #e5e5e59c;">
+<div class=" " >
  
   <router-outlet></router-outlet>
 </div>

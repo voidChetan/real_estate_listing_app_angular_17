@@ -2557,36 +2557,7 @@
       background-color: #00204a;
       border-color: #00204a; }
   
-  .btn-secondary {
-    color: #fff;
-    background-color: #005555;
-    border-color: #005555; }
-    .btn-secondary:hover {
-      color: #fff;
-      background-color: #004848;
-      border-color: #004444; }
-    .btn-check:focus + .btn-secondary, .btn-secondary:focus {
-      color: #fff;
-      background-color: #004848;
-      border-color: #004444;
-      -webkit-box-shadow: 0 0 0 0.25rem rgba(38, 111, 111, 0.5);
-      box-shadow: 0 0 0 0.25rem rgba(38, 111, 111, 0.5); }
-    .btn-check:checked + .btn-secondary,
-    .btn-check:active + .btn-secondary, .btn-secondary:active, .btn-secondary.active,
-    .show > .btn-secondary.dropdown-toggle {
-      color: #fff;
-      background-color: #004444;
-      border-color: #004040; }
-      .btn-check:checked + .btn-secondary:focus,
-      .btn-check:active + .btn-secondary:focus, .btn-secondary:active:focus, .btn-secondary.active:focus,
-      .show > .btn-secondary.dropdown-toggle:focus {
-        -webkit-box-shadow: 0 0 0 0.25rem rgba(38, 111, 111, 0.5);
-        box-shadow: 0 0 0 0.25rem rgba(38, 111, 111, 0.5); }
-    .btn-secondary:disabled, .btn-secondary.disabled {
-      color: #fff;
-      background-color: #005555;
-      border-color: #005555; }
-  
+ 
   .btn-success {
     color: #fff;
     background-color: #198754;
@@ -9204,7 +9175,6 @@
     position: absolute;
     top: 0;
     z-index: 9;
-    background-color: #efefef;
     width: 100%; }
     .site-nav h1, .site-nav .h1 {
       margin: 0;
@@ -9748,7 +9718,7 @@
           background: rgba(34, 34, 34, 0.4); }
   
   .section {
-    padding-top: 4rem;
+    padding-top: 7rem;
     padding-bottom: 4rem; }
     .section .heading {
       font-weight: 500; }
@@ -9892,7 +9862,7 @@
   
   .property-item .property-content {
     background: #fff;
-    padding: 30px;
+    padding: 15px;
     font-size: 13px;
     position: relative;
     width: 100%;
@@ -9901,7 +9871,7 @@
     box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.05);
     z-index: 2; }
     .property-item .property-content .price, .property-item .property-content .city {
-      font-size: 20px;
+     
       font-weight: 700;
       color: #000; }
     .property-item .property-content .price {
